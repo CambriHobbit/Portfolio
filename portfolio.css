@@ -1,0 +1,298 @@
+html{
+  height: 100%;
+  background-color: #00747C;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #fff;
+  height: 100%;
+}
+/*Header*/
+header>nav{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #202022;
+}
+header > nav > ul{
+  display: flex;
+  justify-content:space-around;  
+}
+header > nav > ul > li{
+  list-style-type: none;
+  padding: 0%;
+}
+header > nav > ul > li > a{
+  width: 100%;
+  height: 100%;
+  text-decoration-line: none;
+  color: white ;
+}
+header > nav > ul > li > a:hover{
+  text-decoration: underline;
+}
+/*Couleur de la page courante*/
+.actif{
+  color: #00BBC9;
+}
+/*Footer*/
+footer>nav{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #202022 ;
+}
+footer> nav > ul{
+  display: flex;
+  justify-content:space-around;
+}
+footer > nav > ul > li{
+  list-style-type: none;
+  padding: 0%;
+}
+footer > nav > ul > li > a{
+  width: 100%;
+  height: 100%;
+  text-decoration-line: none;
+  color:white;
+}
+footer > nav > ul > li > a:hover{
+  text-decoration: underline;
+}
+
+/*Main*/
+main{
+  background-color: white;
+  width: 100%;
+}
+main > aside{
+  margin: 0px;
+  flex-basis: 100px ;
+  background-color: #CACACA;
+  
+}
+main>aside>h2{
+  font-family:DancingScript ;
+  font-size: 2em;
+  text-align: center;
+}
+main>aside>figure>img{
+  border-radius: 10px;
+}
+main> aside+article{
+  width: 100%;
+  flex-grow: 1;
+  flex-basis:60% ;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.sectionAcceuil{
+  margin: 1em;
+}
+main>aside>figure>img{
+  width: 15em;
+}
+/*CSS spécifique à mes-projets.html*/
+.button{
+  width: 40%;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #AFAFAF;
+  border-radius: 10px;
+  background-color: #B6D8F2;
+  transition: all 0.3s ease-out;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+}
+.button>div{
+  text-decoration: none;
+}
+.button:hover{
+  background-color: #5784BA;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+.projetI, .projetII,.projetIII,.projetIV,.projetV,.projetVI,.projetVII,.GrandeImage{
+  margin: 6rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+/* Croix pour quitter "la popup"*/
+.cross{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition:  0.3s ease;
+  color: #202022;
+}
+.cross:hover{
+  color: red;
+}
+.projets{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*Police du header et footer*/
+footer, header{
+  font-family: Stick;
+}
+/* Police d'écriture*/
+@font-face {
+  font-family: DancingScript;
+  src: url('themes/DancingScript/DancingScript-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: Stick;
+  src: url('themes/Stick_No_Bills/StickNoBills-VariableFont_wght.ttf');
+}
+h3{
+  font-size: 15px;
+}
+h1{
+  text-align: center ;
+  font-size: 2.5em;
+}
+.centre{
+  text-align: center ;
+}
+.listeElement{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+.box{
+  border: 1px solid #202022;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+.histoire{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.paysageSavoisien,.randonnées{
+  width: 18em;
+  border-radius: 15px;
+}
+.qui-suis-je, .mes-activité,.info1,.info2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Le-Seigneur-des-Anneaux,.Savoué{
+  border-radius: 15px;
+  width: 20em; 
+}
+.phrise{
+  color: #000000;
+  text-decoration: none;
+}
+.phrise:hover{
+  text-decoration: underline;
+}
+.section-Qui-Suis-Je{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.petitePagePro, .petitePageAcc{
+  min-height: 90%;
+}
+.sectionAcceuil>hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.articleProj{
+  text-align: center;
+  min-width: 605px;
+  background-color: white;
+}
+.listeComp{
+  text-align: left;
+}
+.listeComp>h3{
+  text-align: center;
+}
+.petanque{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.petanqueBox{
+  max-width: 16em;
+  background-color: #CACACA;
+  border-radius: 15px;
+}
+.ImageSectionPetanque{
+  width: 10em;
+  border-radius: 15px;
+}
+.ImageSectionPetanqueTerrrain{
+  border-radius: 15px;
+  width: 12.5em;
+}
+.ImageGrandFormat{
+  width: 80%;
+  border-radius: 20px;
+}
+.ParcourAPied{
+  width: 90%;
+}
+.projetVI{
+  width: 60%;
+  
+}
+.sujet{
+  color: #000000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.sujet:hover{
+  text-decoration: underline;
+}
+hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

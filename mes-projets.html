@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>Mon portfolio</title>
+      <link rel="stylesheet" href="portfolio.css"> 
+    </head>
+
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-suis-je.html">Qui-suis-je ?</a></li>
+            <li><a class="actif" href="mes-projets.html">Mes projets</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <main class="petitePagePro">
+        <aside>
+          <figure>
+            <img src="./img/IMG_20230316_084406.jpg" alt="Photo de profil">
+          </figure>
+
+          <h2>Mussio Gabin</h2>
+          <ul>
+            <li>&#128100; Étudiant en première année en BUT informatique</li>
+            <li>&#128205; IUT2 Place Doyen Gosse</li>
+            <li>&#128381; 07 67 10 09 32</li>
+            <li>&#9993; gabin.mussio@laposte.net</li>
+          </ul>
+        </aside>
+
+        <article class="articleProj">
+          <h1>Mes projets</h1>
+            <section class="projets">
+              <a href="#projetI" class="button">
+                <div>
+                  <h2>Projet I : </h2>
+                  <p>Installation et configuration d'un poste de travail.</p>
+                </div>
+              </a>
+              <a href="#projetII" class="button">
+                <div>
+                  <h2>Projet II :</h2>
+                  <p>Création, nettoyage et analyse de données </p>
+                </div>
+              </a>
+              <a href="#projetIII" class="button">
+                <div>
+                  <h2>Projet III :</h2>
+                  <p>Mise en avant de la transition écologique et numérique d'une entreprise du service numérique.</p>
+                </div>
+              </a>
+              <a href="#projetIV" class="button">
+                <div>
+                  <h2>Projet IV :</h2>
+                  <p>Creation d'une application de gestion d'évènement.</p>
+                </div>
+              </a>
+              <a href="#projetV" class="button">
+                <div>
+                  <h2>Projet V :</h2>
+                  <p>Implémentation d'un besoin et comparaison d'approche algorithmique.</p>
+                </div>
+              </a>
+              <a href="#projetVI" class="button">
+                <div>
+                  <h2>Projet VI</h2>
+                  <p>Création d'un terrain de pétanque.</p>
+                </div>
+              </a>
+            </section>
+            <section>
+              <h2> Mon projet à venir :</h2>
+              <div class="projets">
+                <a href="#projetVII" class="button">
+                  <div>
+                    <h2>Projet VII:</h2>
+                    <p>Traversée du Parc de la Vanoise.</p>
+                  </div>
+                </a>
+              </div>
+              
+            </section>
+           <!-- Ceci est cacher (ce n'est pas visible si le projet n'est pas cliqué)-->
+            <section>
+            <div id="projetI" class="overlay">
+              <div class="projetI">
+                <h2>Projet I : Installation et configuration d'un poste de travail.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  Le but de ce projet consiste à l'installation d'une machine virtuelle sous Debian.
+                   Après l'installation de celle-ci, on a dû installer des applications tels que PostgreSQL, Apache et PHP afin de se servir de la machine virtuelle comme un serveur.              
+                </p>
+                <a href="sujet/projet1sujet.png" class="sujet">Sujet</a>
+                <div class="listeComp">
+                  <h3>Compétence technique utilisée et développée :</h3>
+                  <ul> 
+                    <li>L'utilisation du gestionnaire de paquet APT</li>
+                    <li>L'installation et l'utilisation d'une interface en ligne commande</li>
+                    <li>Installation d'un service réseau</li>
+                  </ul>
+                  <h3>Compétence transversale utilisée et développée :</h3>
+                  <ul> 
+                    <li>Interpréter et résoudre une erreur</li>
+                    <li>Modéliser et comprendre un réseau</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="projetII" class="overlay">
+              <div class="projetII">
+                <h2>Projet II : Création, nettoyage et analyse de données.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  Ce projet en binôme a pour but la création d'une base de données puis l'analyse de ces données.
+                  Dans un premier temps, on a récuperé les données depuis un fichier csv, ensuite on a dû nettoyer les données afin de garder les plus pertinentes.
+                  Par la suite, on a récuperé ces données afin de les utiliser pour en faire des graphiques et une analyse statistique.
+                </p>
+                <a href="sujet/projet2sujet.png" class="sujet">Sujet</a>
+                <div class="listeComp">
+                  <h3>Compétence technique utilisée et développée :</h3>
+                  <ul> 
+                    <li>Importation et exportation d'une base de données</li>
+                    <li>Manipulation de PostgreSQL et Rstudio</li>
+                    <li>Utilisation de SQL et de R</li>
+                  </ul>
+                  <h3>Compétence transversale utilisée et développée :</h3>
+                  <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Interprétation de contraintes et de données</li>
+                    <li>Sélection de données pertinentes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="projetIII" class="overlay">
+              <div class="projetIII">
+                <h2>Projet III : Mise en avant de la transition écologique et numérique d'une entreprise du service numérique.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  Dans le cadre de ce projet en trinôme, on a dû choisir une entreprise du service numérique afin d'étudier son approche de l'écologie et de sa transition numérique.
+                  Après cette étude, nous avons dû réaliser un site web récapitulatif de ce que l'on avait trouvé dans notre étude.
+                  De même, nous avons dû vulgariser le contenu technique afin que le plus de personnes puissent comprendre le sujet.  
+                </p>
+                <a href="sujet/projet3sujet.pdf" class="sujet">Sujet</a>
+                <div class="listeComp">
+                  <h3>Compétence technique utilisée et développée : </h3>
+                  <ul> 
+                    <li>Utilisation de HTML et de CSS</li>
+                    <li>Vulgarisation de terme technique</li>
+                  </ul>
+                  <h3>Compétence transversale utilisée et développée :</h3>
+                  <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Interprétation de la transition écologique et numérique d'une entreprise </li>
+                    <li>Sélection de données pertinentes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="projetIV" class="overlay">
+              <div class="projetIV">
+                <h2>Projet IV : Création d'une application de gestion d'évènements.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  L'objectif de ce projet est la création d'une application de gestion d'évènements. 
+                  Pour ce projet, nous étions une équipe de cinq personnes. Ce projet avait besoin d'une grande organisation. Pour cela une planification a été mise en place.
+                  De plus, on a dû mettre en place une buvette dans le cadre du projet et optimiser sa fonction gain.
+                  De même, on a dû développer l'interface de cette application en JavaFX et donc modéliser en amont cette interface.
+                </p>
+                <a href="sujet/projet4sujet.pdf" class="sujet">Sujet</a>
+                <div class="listeComp">
+                  <h3>Compétence technique utilisée et développée : </h3>
+                  <ul> 
+                    <li>Utilisation de JavaFX et de UML</li>
+                    <li>Optimisation d'une fonction</li>
+                    <li>Gestion d'une équipe</li>
+                    <li>Conception d'une maquette et de diagrammes</li>
+                  </ul>
+                  <h3>Compétence transversale utilisée et développée :</h3>
+                  <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Modélisation d'un problème et résolution</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="projetV" class="overlay">
+              <div class="projetV">
+                <h2>Projet V : Implémentation d'un besoin et comparaison d'approche algorithmique.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  Le but de ce projet en binôme, était la création d'un programme en Java auquel nous avons donné un fichier contenant des mots associés à un nombre.
+                  Ensuite, il classait les différents articles selon leur thème, avec plus ou moins d'erreurs.
+                  Dans un second temps, pour avoir plus de précision, nous avons automatisé la création du fichier contenant les mots avec un poids associé.
+                  On lui a donné une liste d'articles avec un thème précis. Si le mot n'apparait pas dans le thème, on lui ajoute "un" à son poids. Puis on change de thème.
+                  Si le mot apparait de nouveau dans le thème, on décrémente son poids.
+                  Par la suite, on a supprimé les mots avec un poids très négatif car la plupart du temps ces mots ne sont pas significatifs d'un thème précis.
+                  Par exemple, les pronoms et les conjonctions de coordination ne sont pas significatifs.
+                  Pour finir, on a testé de nouveau sur les mêmes articles, et le pourcentage d'erreur était très faible, inférieur à 10%.
+                <p>
+                <a href="sujet/projet5partie1.pdf" class="sujet">Sujet partie I</a>
+                <a href="sujet/projet5partie2.pdf" class="sujet">Sujet partie II</a>
+                <div class="listeComp">
+                  <h3>Compétence technique utilisée et développée : </h3>
+                  <ul> 
+                    <li>Utilisation de Java</li>
+                    <li>Mise en place d'un algorithmique qui "apprend"</li>
+                    <li>La programmation à plusieurs</li>
+                  </ul>
+                  <h3>Compétence transversale utilisée et développée :</h3>
+                  <ul> 
+                    <li>Travail en binôme</li>
+                    <li>Implémentation d'un besoin</li>
+                    <li>Compréhension algorithmique (algorithmique qui "apprend par lui-même")</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="projetVI" class="overlay">
+              <div class="projetVI">
+                <h2>Projet VI : Création d'un terrain de pétanque.</h2>
+                <a href="#" class="cross">&times;</a>
+                <p>
+                  Afin de réunir ma famille ou mes amis, j'ai eu le projet de la création d'un terrain de pétanque.
+                <p>
+                <section class="petanque">
+                  <div class="petanqueBox">
+                    <h4>Étape I : Faire les plans</h4>
+                    <a href="#imageI">
+                      <img src="img/Plan.jpg" alt="Plan terrain" class="ImageSectionPetanque">
+                    </a>
+                    <p>Ceci est une étape importante pour modéliser la situation et se rendre ccompte du travail.</p>
+                  </div>
+                  <div class="petanqueBox">
+                    <h4>Étape II : Délimiter la zone et la creuser</h4>
+                    <a href="#imageII">
+                      <img src="img/EtapeII.jpg" alt="Terrain à creuser" class="ImageSectionPetanque">
+                    </a>
+                    <p>Anecdote/Conseil: Ne pas prendre un décamètre en tissu des années 60, le tissu rapetisse dans le temps !</p>
+                  </div>
+                  <div class="petanqueBox">
+                    <h4>Étape III : Poser le géotextile, les traverses, puis déposer le gravier (En cours).</h4>
+                    <a href="#imageIII">
+                      <img src="img/EtapeIII.jpg" alt="Terrain creuser" class="ImageSectionPetanque">
+                    </a>
+                    <p>Conseil: pour une meilleure expérience mettre son terrain à niveau.<p>
+                  </div>
+                  <div class="petanqueBox">
+                    <h4>Étape IV : Jouer !</h4>
+                    <img src="img/terrain-de-petanque.jpg" alt="Terrain de pétanque" class="ImageSectionPetanqueTerrrain">
+                    <p>Conseil: Inviter des amis et passer un bon moment.<p>
+                  </div>                  
+                </section>
+              </div>
+            </div>
+            <div id="projetVII" class="overlay">
+              <div class="projetVII">
+                <h2>Projet VII : Traversée du Parc de la Vanoise.</h2>
+                <p>
+                  La recherche d'un retour à la nature m'a poussé à planifier une aventure montagnarde. 
+                  J'ai choisi de traverser le Parc de la Vanoise et les Alpes.
+                  Je pourrais par la suite envisager de relier les quatre villes les plus importantes en terre savoisienne :
+                  partir de Chambéry direction Genève puis Turin puis Nice pour revenir, tout cela à pied ou peut-être à vélo.</p>
+                <a href="#" class="cross">&times;</a>
+                <img src="img/Parcours.png" alt="Modane-Chamonix" class="ParcourAPied">
+              </div>
+            </div>
+            <div id="imageI" class="overlay">
+              <div class="GrandeImage">
+                <h2>Les plans</h2>
+                <a href="#projetVI" class="cross">&times;</a>
+                
+                <img src="img/Plan.jpg" alt="Plan terrain" class="ImageGrandFormat">
+              </div>
+            </div>
+            <div id="imageII" class="overlay">
+              <div class="GrandeImage">
+                <h2>Délimiter la zone et la creuser</h2>
+                <a href="#projetVI" class="cross">&times;</a>
+                <img src="img/EtapeII.jpg" alt="Terrain délimiter" class="ImageGrandFormat">
+              </div>
+            </div>
+            <div id="imageIII" class="overlay">
+              <div class="GrandeImage">
+                <h2>Poser le géotextile, les traverses puis déposer le gravier (En cours).</h2>
+                <a href="#projetVI" class="cross">&times;</a>
+                <img src="img/EtapeIII.jpg" alt="Terrain creuser" class="ImageGrandFormat">
+              </div>
+            </div>
+            
+          </section>
+        </article>
+      </main>
+
+      <!-- Barre des réseaux sociaux -->
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="#">Github</a></li>
+            <li><a href="https://instagram.com/gab.mso?igshid=ZDdkNTZiNTM=">Instagram</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
+
+
